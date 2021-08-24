@@ -1,0 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+#item {
+    border: 1px solid orange;
+}
