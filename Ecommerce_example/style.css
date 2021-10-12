@@ -24,7 +24,7 @@ nav ul li {
     margin-right: 20px; /* space items */
 }
 a {
-    text-decoration: none; /* remove underline from nav link anchor tag */
+    text-decoration: none; /* remove underline from nav link anchor tag globally */
     color: #555;
 }
 P {
