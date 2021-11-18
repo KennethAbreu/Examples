@@ -1,7 +1,7 @@
 document.body.onload = addElement;
 let text = "Sample Text"
 
-function addElement () {
+function addElement() {
   // create a new p element
   const newPara = document.createElement("p");
 
