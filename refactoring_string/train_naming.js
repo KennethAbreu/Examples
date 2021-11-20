@@ -1,4 +1,20 @@
-const body = document.querySelector('.container');
+
+
+function teleprompt(array) {
+        //create new p element
+    const newPara = document.createElement("p");
+
+    //give p element some content
+    const fillGuest = document.createTextNode(array);
+
+    //add text node to newly created p element
+    newPara.appendChild(fillGuest);
+
+    //add newly created p element and its contents to DOM
+    const body = document.getElementById(null); //setting getElementById to null or leaving empty just adds right to body of html
+    document.body.insertBefore(newPara, body);
+
+}
 let trainList = [
     'MAN675847583748sjt567654;Manchester Piccadilly',
     'GNF576746573fhdg4737dh4;Greenfield',
@@ -13,4 +29,5 @@ for (i = 0; i < trainList.length; i++) {
     let stationName = trainList[i].slice(semiColon, trainList[i].length);
     let result = `${stationCode} - ${stationName}`;
     console.log(result);
+    teleprompt(result);
 }
